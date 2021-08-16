@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jr Tech</string>
+    <string name="connect_with_us">Connect With Us</string>
+    <string name="report">Report</string>
+    <string name="abouttext">© 2021 - 2022 Jr Tech</string>
+    <string name="details">wewd</string>
+
+    <string name="text_IT">
+        This programme has been designed to produce graduates who will satisfy the needs of employers as well as self-employment in the 21st century and are ready to enter ICT market and are prepared to continue learning throughout their life.
+    </string>
+</resources>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServicesActivity">
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ServicesActivity">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Computing And Information Technology"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Business Administration"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Electronics &amp; Telecom"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Graphics Designing"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Professional Course"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#e8e8e8"
+                cardview:cardCornerRadius="10dp"
+                cardview:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        cardview:srcCompat="@drawable/logo" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageViewLogo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvtittle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="SHORT COURSES"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/text_IT"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tvExplore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/locale"
+                            android:layout_gravity="end"
+                            android:layout_weight="6"
+                            android:background="@color/purple_500"
+                            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text=" EXPLORE MORE"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>>

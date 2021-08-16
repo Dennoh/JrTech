@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/my_progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:indeterminate="true"
+                android:progressDrawable="@drawable/prog_color" />
+
+            <WebView
+                android:id="@+id/webviewMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple_500"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="mainClicked"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:id="@+id/Connect_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:onClick="mainClicked"
+                    android:src="@drawable/ic_baseline_import_contacts_24" />
+
+
+                <TextView
+                    android:id="@+id/Connect_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:onClick="mainClicked"
+                    android:text="Contacts"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:onClick="mainClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/services_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:clickable="false"
+                    android:onClick="mainClicked"
+                    android:src="@drawable/ic_baseline_book_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/services_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:clickable="false"
+                    android:onClick="mainClicked"
+                    android:text="Services"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="mainClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/settings_chat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:onClick="mainClicked"
+                    android:src="@drawable/ic_baseline_chat_24" />
+
+                <TextView
+                    android:id="@+id/settings_chatnow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:onClick="mainClicked"
+                    android:text="Let's Chat"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="mainClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/settings_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:onClick="mainClicked"
+                    android:src="@drawable/ic_baseline_settings_applications_24" />
+
+                <TextView
+                    android:id="@+id/settings_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:onClick="mainClicked"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
